@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PM Website Design</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- AOS Animations -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+  <!-- TEXT ANIMATION SCRIPT -->
+ <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const texts = [
+    "Negocios Modernos",
+    "E-commerce que Venden",
+    "Empresas en Crecimiento"
+  ];
+
+  let index = 0;
+  const textElement = document.getElementById("changing-text");
+
+  setInterval(() => {
+    textElement.style.opacity = 0;
+
+    setTimeout(() => {
+      index = (index + 1) % texts.length;
+      textElement.textContent = texts[index];
+      textElement.style.opacity = 1;
+    }, 400);
+
+  }, 2000);
+
+});
+</script>
+</body>
+<!-- HEADER -->
+<header class="header">
+  <div class="logo">
+    <img src="assets/logo.png" alt="PM Website Design logo">
+  </div>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#portfolio">Portafolio</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <button class="cta">Cotizar</button>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="hero-content">
+   <h1 data-aos="fade-up" class="hero-title">
+  Diseño Web de Alto Nivel para<br>
+  <span id="changing-text">Negocios Modernos</span>
+</h1>
+
+    <p data-aos="fade-up" data-aos-delay="200">
+      Transformamos ideas en experiencias digitales premium en República Dominicana
+    </p>
+
+    <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
+      <button class="primary">Empezar Proyecto</button>
+      <button class="secondary">Ver Portafolio</button>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="servicios">
+
+  <h2 data-aos="fade-up">Servicios Digitales de Alto Nivel</h2>
+  <p class="services-sub" data-aos="fade-up" data-aos-delay="100">
+    Soluciones diseñadas para llevar tu negocio al siguiente nivel
+  </p>
+
+  <div class="grid">
+
+    <div class="card" data-aos="fade-up">
+      <div class="icon icon-web">🌐</div>
+      <h3>Diseño Web Premium</h3>
+      <p>
+        Creamos páginas web modernas, rápidas y enfocadas en convertir visitantes en clientes.
+      </p>
+    </div>
+
+    <div class="card" data-aos="fade-up" data-aos-delay="100">
+      <div class="icon icon-shop">🛒</div>
+      <h3>Tiendas Online</h3>
+      <p>
+        E-commerce optimizados para ventas, pagos seguros y experiencia de usuario superior.
+      </p>
+    </div>
+
+    <div class="card" data-aos="fade-up" data-aos-delay="200">
+      <div class="icon icon-seo">🚀</div>
+      <h3>SEO & Crecimiento</h3>
+      <p>
+        Posicionamos tu negocio en Google para atraer más clientes de forma orgánica.
+      </p>
+    </div>
+
+    <div class="card" data-aos="fade-up" data-aos-delay="300">
+      <div class="icon icon-auto">
+  <span class="gear">⚙️</span>
+</div>
+      <h3>Automatización</h3>
+      <p>
+        Integramos herramientas inteligentes para optimizar procesos y aumentar productividad.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- PORTFOLIO -->
+<section class="portfolio" id="portfolio">
+  <h2 data-aos="fade-up">Proyectos Recientes</h2>
+
+  <div class="portfolio-grid">
+
+    <div class="portfolio-item" data-aos="zoom-in">
+      <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f" />
+      <div class="overlay">
+        <h3>Empresa Constructora</h3>
+        <p>Sitio web corporativo moderno</p>
+      </div>
+    </div>
+
+    <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="100">
+      <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d" />
+      <div class="overlay">
+        <h3>Tienda Online</h3>
+        <p>E-commerce optimizado para ventas</p>
+      </div>
+    </div>
+
+    <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="200">
+      <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7" />
+      <div class="overlay">
+        <h3>Restaurante</h3>
+        <p>Diseño web con menú interactivo</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section class="pricing" id="precios">
+
+  <h2 data-aos="fade-up">Planes de Diseño Web</h2>
+  <p class="pricing-sub" data-aos="fade-up" data-aos-delay="100">
+    Soluciones diseñadas para hacer crecer tu negocio
+  </p>
+
+  <div class="pricing-grid">
+
+    <!-- STARTER -->
+    <!-- STARTER -->
+<div class="price-card" data-aos="fade-up">
+  <h3>Starter</h3>
+  <p class="price">$300 <span>USD</span></p>
+  <ul>
+    <li>✔ Página web básica</li>
+    <li>✔ Diseño responsive</li>
+    <li>✔ 3 secciones</li>
+    <li>✔ Entrega rápida</li>
+  </ul>
+  <p class="monthly">+ $50 USD / mes</p>
+<p class="monthly-desc">
+Mantenimiento básico, actualizaciones y soporte técnico
+</p>
+  <a href="https://wa.me/18498512587?text=Hola,%20quiero%20el%20plan%20Starter" target="_blank">
+    Elegir Plan
+  </a>
+</div>
+
+<!-- PROFESSIONAL -->
+<div class="price-card featured" data-aos="fade-up" data-aos-delay="100">
+  <div class="badge">Más Popular</div>
+  <h3>Profesional</h3>
+  <p class="price">$700 <span>USD</span></p>
+  <ul>
+    <li>✔ Diseño premium</li>
+    <li>✔ SEO básico</li>
+    <li>✔ Hasta 6 secciones</li>
+    <li>✔ Optimización de velocidad</li>
+  </ul>
+  <p class="monthly">+ $100 USD / mes</p>
+<p class="monthly-desc">
+Mantenimiento, optimización, cambios mensuales y soporte prioritario
+</p>
+  <a href="https://wa.me/18498512587?text=Hola,%20quiero%20el%20plan%20Profesional" target="_blank">
+    Elegir Plan
+  </a>
+</div>
+
+<!-- PREMIUM -->
+<div class="price-card" data-aos="fade-up" data-aos-delay="200">
+  <h3>Premium</h3>
+  <p class="price">$1500+ <span>USD</span></p>
+  <ul>
+    <li>✔ Diseño totalmente personalizado</li>
+    <li>✔ SEO avanzado</li>
+    <li>✔ Animaciones avanzadas</li>
+    <li>✔ Soporte prioritario</li>
+  </ul>
+  <p class="monthly">+ $200 USD / mes</p>
+<p class="monthly-desc">
+Soporte completo, mejoras continuas, SEO y optimización avanzada
+</p>
+  <a href="https://wa.me/18498512587?text=Hola,%20quiero%20el%20plan%20Premium" target="_blank">
+    Elegir Plan
+  </a>
+</div>
+
+  </div>
+<p class="pricing-note">
+Los planes mensuales incluyen mantenimiento, seguridad, actualizaciones y soporte técnico para garantizar el rendimiento continuo de tu sitio web.
+</p>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <h2 data-aos="fade-up">¿Listo para escalar tu negocio?</h2>
+  <p data-aos="fade-up" data-aos-delay="200">
+    Trabajemos juntos en tu próximo proyecto digital
+  </p>
+  <button class="primary" data-aos="fade-up" data-aos-delay="400">
+    Contáctanos
+  </button>
+</section>
+
+<!-- CONTACT -->
+<form name="contacto" method="POST" data-netlify="true" class="contact-form">
+
+  <input type="hidden" name="form-name" value="contacto">
+
+  <h3>Inicia tu proyecto</h3>
+  <p class="form-sub">Respuesta en menos de 24 horas</p>
+
+  <input type="text" name="nombre" placeholder="Tu nombre" required>
+  <input type="email" name="email" placeholder="Correo electrónico" required>
+
+  <textarea name="mensaje" placeholder="Describe tu proyecto..." required></textarea>
+
+  <button type="submit">
+    <span>Enviar mensaje</span>
+  </button>
+
+</form>
+  
+
+
+<input type="hidden" name="bot-field">
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 PM Website Design</p>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/18498512587?text=Hola,%20vi%20su%20p%C3%A1gina%20web%20y%20quiero%20informaci%C3%B3n" 
+   class="whatsapp-float" 
+   target="_blank">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
+
+<!-- AOS SCRIPT -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+
+</body>
+</html>
