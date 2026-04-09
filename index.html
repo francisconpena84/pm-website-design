@@ -17,7 +17,17 @@
 
 <body>
 
+<script>
+const video = document.querySelector(".video-loop");
 
+video.addEventListener("mouseenter", () => {
+  video.playbackRate = 1.5;
+});
+
+video.addEventListener("mouseleave", () => {
+  video.playbackRate = 1;
+});
+</script>
 
   <!-- TEXT ANIMATION SCRIPT -->
  <script>
@@ -128,7 +138,36 @@ document.addEventListener("DOMContentLoaded", function () {
   </div>
 
 </section>
+<section class="tech-section">
 
+  <!-- IMAGE -->
+  <div class="tech-image" data-aos="fade-up">
+    <img src="assets/futuristic-tech.jpg" alt="Desarrollo web moderno en República Dominicana">
+  </div>
+
+  <!-- VIDEO -->
+  <div class="tech-video" data-aos="fade-up" data-aos-delay="100">
+    <video autoplay muted loop playsinline class="video-loop">
+      <source src="assets/code-bg.mp4.mov" type="video/mp4">
+    </video>
+
+    <!-- Glass overlay -->
+    <div class="video-overlay">
+      <span>Innovación Digital</span>
+    </div>
+  </div>
+
+  <!-- TEXT -->
+  <div class="tech-content" data-aos="fade-up" data-aos-delay="200">
+    <h2>Desarrollo Web Profesional en República Dominicana</h2>
+
+    <p>
+      Creamos páginas web modernas, rápidas y optimizadas para posicionarse en Google.
+      Combinamos diseño, tecnología y estrategia digital para ayudarte a crecer online.
+    </p>
+  </div>
+
+</section>
 <!-- PORTFOLIO -->
 <section class="portfolio" id="portfolio">
   <h2 data-aos="fade-up">Proyectos Recientes</h2>

@@ -881,3 +881,136 @@ button, .primary, .secondary {
   border-radius: 6px;
   background: #06b6d4;
 }
+.tech-section {
+  padding: 120px 40px;
+  text-align: center;
+}
+
+/* IMAGE */
+.tech-image img {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.6);
+}
+
+/* VIDEO */
+.tech-video video {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 15px;
+  opacity: 0.8;
+  margin-bottom: 40px;
+}
+
+/* TEXT */
+.tech-content h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.tech-content p {
+  color: #aaa;
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.6;
+}
+@media (max-width: 768px) {
+  .tech-section {
+    padding: 80px 20px;
+  }
+
+  .tech-content h2 {
+    font-size: 1.6rem;
+  }
+}
+.tech-section {
+  padding: 120px 40px;
+  text-align: center;
+  position: relative;
+}
+
+/* GLOW BACKGROUND */
+.tech-section::before {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(59,130,246,0.2), transparent);
+  filter: blur(120px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+/* IMAGE */
+.tech-image img {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.6);
+  transition: 0.5s;
+}
+
+.tech-image img:hover {
+  transform: scale(1.03);
+}
+
+/* VIDEO */
+.tech-video {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.video-loop {
+  width: 100%;
+  border-radius: 15px;
+  opacity: 0.85;
+  transition: 0.4s;
+}
+
+/* VIDEO HOVER EFFECT */
+.tech-video:hover .video-loop {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+/* GLASS OVERLAY */
+.video-overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  font-size: 14px;
+}
+
+/* TEXT */
+.tech-content h2 {
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+}
+
+.tech-content p {
+  color: #aaa;
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+/* FLOAT EFFECT */
+.tech-section {
+  animation: floatSection 8s ease-in-out infinite;
+}
+
+@keyframes floatSection {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
