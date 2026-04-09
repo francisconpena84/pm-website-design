@@ -760,3 +760,101 @@ html {
   filter: blur(120px);
   z-index: -1;
 }
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+  /* HEADER */
+  .header {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav a {
+    margin: 5px 10px;
+    font-size: 14px;
+  }
+
+  /* HERO */
+  .hero {
+    height: auto;
+    padding: 80px 20px;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .primary, .secondary {
+    width: 100%;
+  }
+
+  /* SERVICES */
+  .services {
+    padding: 80px 20px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 30px 20px;
+  }
+
+  /* PORTFOLIO */
+  .portfolio {
+    padding: 80px 20px;
+  }
+
+  .portfolio-item img {
+    height: 200px;
+  }
+
+  /* PRICING */
+  .pricing {
+    padding: 80px 20px;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* CONTACT */
+  .contact {
+    padding: 80px 20px;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 20px;
+    font-size: 14px;
+  }
+
+}
+button, .primary, .secondary {
+  min-height: 48px;
+  font-size: 16px;
+}
+.hero-content {
+  padding: 0 10px;
+}
